@@ -1,10 +1,14 @@
-body, html{
+html{
+  height: 100%;
+}
+body{
   height: 100%;
   box-sizing: border-box;
   margin: 0;
-  --sidebar-clr: blue;
-  --main-clr: grey;
+  --sidebar-clr: rgb(23, 141, 231);
+  --main-clr: rgb(200, 200, 200);
   --header-clr: white;
+  font-family: 'robotoregular';
 }
 
 .header{
@@ -14,6 +18,11 @@ body, html{
 .sidebar{
   background-color: var(--sidebar-clr);
   grid-row: 1 / 3;
+  font-weight: 600;
+  padding: 12px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 50px;
 }
 .main{
   background-color: var(--main-clr);
@@ -22,8 +31,34 @@ body, html{
 }
 
 .container{
-  height: 100%;
+  min-height: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr  5fr;
+}
+
+.sidebar .text{
+  color: white;
+}
+
+.nav-item, .branding-item, .top{
+  display: grid;
+  gap:10px;
+  grid-template-columns: auto 1fr;
+}
+
+.sidebar .center .nav, .sidebar .bottom .branding{
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.sidebar .top{
+  font-family: 'robotobold';
+  font-weight: 900;
+  align-items: center;
+}
+
+.sidebar .top .logo{
+  scale: 1.5;
 }
