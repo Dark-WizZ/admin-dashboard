@@ -16,8 +16,8 @@ body{
   grid-column: 2 / 3;
   padding: 16px 42px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
 }
 .sidebar{
   background-color: var(--sidebar-clr);
@@ -67,10 +67,10 @@ body{
   scale: 1.5;
 }
 
-.header .top{
+.header *{
   font-family: 'robotobold';
   display: flex;
-  gap: 24px;
+  gap: 20px;
   align-items: center;  
 }
 .header .top .searchbox{
@@ -85,7 +85,25 @@ body{
   height: 24px;
   width: 24px;
 }
-.dp{
+.header .top .dp{
   height: 28px;
   width: 28px;
+}
+
+.header .about{
+  display: grid;
+  gap: 0;
+  margin-right: auto;
+}
+
+.header .about .greeting{
+  font-size: 0.8em;
+}
+
+.header button{
+  color: white;
+  border: 0;
+  padding: 5px 20px;
+  background-color: var(--sidebar-clr);
+  border-radius: 20px;
 }
