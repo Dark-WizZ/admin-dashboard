@@ -6,7 +6,7 @@ body{
   box-sizing: border-box;
   margin: 0;
   --sidebar-clr: rgb(23, 141, 231);
-  --main-clr: rgb(200, 200, 200);
+  --main-clr: rgb(210, 210, 210);
   --header-clr: white;
   font-family: 'robotoregular';
 }
@@ -14,6 +14,10 @@ body{
 .header{
   background-color: var(--header-clr);
   grid-column: 2 / 3;
+  padding: 16px 42px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
 }
 .sidebar{
   background-color: var(--sidebar-clr);
@@ -61,4 +65,27 @@ body{
 
 .sidebar .top .logo{
   scale: 1.5;
+}
+
+.header .top{
+  font-family: 'robotobold';
+  display: flex;
+  gap: 24px;
+  align-items: center;  
+}
+.header .top .searchbox{
+  padding:2px;
+  flex: 0.8;
+  margin-right: auto;
+  border-radius: 25px;
+  border: 0;
+  background-color: var(--main-clr);
+}
+.header .top img{
+  height: 24px;
+  width: 24px;
+}
+.dp{
+  height: 28px;
+  width: 28px;
 }
