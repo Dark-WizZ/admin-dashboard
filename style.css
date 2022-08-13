@@ -5,7 +5,7 @@ body{
   height: 100%;
   box-sizing: border-box;
   margin: 0;
-  --sidebar-clr: rgb(23, 141, 231);
+  --sidebar-clr: rgb(0, 125, 220);
   --main-clr: rgb(220, 220, 220);
   --header-clr: white;
   font-family: 'robotoregular';
@@ -113,17 +113,30 @@ body{
 .project img{
   width: 16px;
   height: 16px;
+  justify-self: end;
 }
 
 .project{
   background-color: white;
   padding: 16px;
   border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 5px;
+  border-left: 6px solid rgb(255, 196, 0);
+}
+
+.project .foot{
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .heading{
   margin-left: 5px;
   margin-bottom: 16px;
+  font-family: 'robotobold';
 }
 
 .projects{
@@ -132,6 +145,7 @@ body{
 }
 
 .projects .content{
+
   display: grid;
   grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
   gap: 16px;
@@ -144,4 +158,9 @@ body{
 .trending{
   grid-column: 2;
   grid-row: 2;
+}
+
+.project .title{
+  font-family: 'robotobold';
+  margin-bottom: 10px;
 }
