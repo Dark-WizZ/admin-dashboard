@@ -77,10 +77,11 @@ body{
   align-items: center;  
 }
 .header .top .searchbox{
-  padding:2px;
+  font-family: 'robotoregular';
+  padding:2px 16px;
   flex: 0.8;
   margin-right: auto;
-  border-radius: 25px;
+  border-radius: 15px;
   border: 0;
   background-color: var(--main-clr);
 }
@@ -165,7 +166,6 @@ body{
 .resources{
   grid-column: 2;
   grid-row: 2;
-  display: grid;
 }
 
 .title{
