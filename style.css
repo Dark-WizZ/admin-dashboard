@@ -187,6 +187,10 @@ body{
   border-bottom: 1px solid #ccc;
   padding-top: 0.5em;
 }
+
+.information .info:last-child::after{
+  display: none;
+}
 img[alt='odin logo']{
   background-color: rgb(154, 154, 154);
 }
